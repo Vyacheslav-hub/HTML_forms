@@ -4,6 +4,7 @@ import { createPopper } from '@popperjs/core';
 const button = document.querySelector('.btn');
 let popover;
 
+
 let popperInstance;
 
 const createPopover = () => {
@@ -45,4 +46,3 @@ button.addEventListener('click', () => {
         popover = null;
     }
 })
-
