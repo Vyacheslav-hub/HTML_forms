@@ -1,0 +1,24 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.popover {
+    width: 300px;
+    color: black;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.popover__title {
+    padding: 5px;
+    background: gray;
+}
+
+.popover__text {
+    padding: 5px;
+}
