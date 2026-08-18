@@ -6,6 +6,7 @@ describe('Popover', () => {
 
     beforeAll(async () => {
         browser = await puppeteer.launch({
+            args: ['--no-sandbox', '--disable-setuid-sandbox'],
             headless: true,
         });
 
@@ -15,7 +16,9 @@ describe('Popover', () => {
     });
 
     afterAll(async () => {
-        await browser.close();
+        if (browser) {
+            await browser.close();
+        }
     });
 
     test('popover появляется после клика', async () => {
