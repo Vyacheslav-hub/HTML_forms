@@ -2,14 +2,14 @@ import "../css/style.css"
 import { createPopper } from '@popperjs/core';
 
 const button = document.querySelector('.btn');
-let popover;
+let popovers;
 
 
 let popperInstance;
 
 const createPopover = () => {
-    popover = document.createElement('div');
-    popover.classList.add('popover');
+    popovers = document.createElement('div');
+    popovers.classList.add('popover');
 
     const popoverTitle = document.createElement('div');
     popoverTitle.classList.add('popover__title');
@@ -20,15 +20,15 @@ const createPopover = () => {
     popoverText.textContent = 'And here\'s some amazing content. It\'s\n' +
         'very engaging. Right?';
 
-    popover.append(popoverTitle, popoverText);
+    popovers.append(popoverTitle, popoverText);
 }
 
 button.addEventListener('click', () => {
-    if (!popover) {
+    if (!popovers) {
         createPopover();
-        document.body.append(popover);
+        document.body.append(popovers);
 
-        popperInstance = createPopper(button, popover, {
+        popperInstance = createPopper(button, popovers, {
             placement: 'top',
             modifiers: [
                 {
@@ -42,7 +42,7 @@ button.addEventListener('click', () => {
     }else {
         popperInstance.destroy();
         popperInstance = null;
-        popover.remove();
-        popover = null;
+        popovers.remove();
+        popovers = null;
     }
 })
