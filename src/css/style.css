@@ -7,6 +7,13 @@ body {
     font-family: sans-serif;
 }
 
+.btn {
+    background: red;
+    border-radius: 7px;
+    border: none;
+    font-size: 20px;
+}
+
 .popover {
     width: 300px;
     color: black;
@@ -22,4 +29,3 @@ body {
 .popover__text {
     padding: 5px;
 }
-

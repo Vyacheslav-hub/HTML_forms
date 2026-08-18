@@ -1,6 +1,5 @@
 import "../css/style.css"
 import { createPopper } from '@popperjs/core';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const button = document.querySelector('.btn');
 let popover;
@@ -46,4 +45,3 @@ button.addEventListener('click', () => {
         popover = null;
     }
 })
-
