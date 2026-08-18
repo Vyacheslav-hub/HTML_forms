@@ -32,7 +32,7 @@ export default (_env, argv) => ({
         filename: "[name].js",
         clean: true,
         publicPath: argv.mode === "production"
-            ? "/OrganizationOfImplementation/"
+            ? "/HTML_forms/"
             : "/",
     },
     module: {
