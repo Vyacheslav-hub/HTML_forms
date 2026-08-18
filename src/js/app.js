@@ -1,7 +1,7 @@
 import "../css/style.css"
 import { createPopper } from '@popperjs/core';
 
-const button = document.querySelector('.btn');
+const button = document.querySelector('.button');
 let popover;
 
 let popperInstance;

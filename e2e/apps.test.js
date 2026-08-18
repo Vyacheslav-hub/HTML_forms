@@ -23,7 +23,7 @@ describe('Popover', () => {
     });
 
     test('popover появляется после клика', async () => {
-        await page.click('.btn');
+        await page.click('.button');
 
         const popover = await page.$('.popover');
 
@@ -50,7 +50,7 @@ describe('Popover', () => {
     });
 
     test('popover исчезает после повторного клика', async () => {
-        await page.click('.btn');
+        await page.click('.button');
 
         const popover = await page.$('.popover');
 
